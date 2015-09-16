@@ -11,9 +11,7 @@
 #    Modify this script to alter other various other settings.
 #
 # Requirements : 
-#    - luggage
 #    - wget
-#    - curl (no longer used)
 #    - internet access for your system(s)
 #    - adobe distribution authroization link (this needs to be entered into the variable below or provided as the first argument to the script)
 #
@@ -22,6 +20,7 @@
 #    1.0 : Initial release 
 #    1.1 : Improved the version release check to keep up with the adobe site.
 #    1.2 : Requires your adobe auth link and will also automatically generate download folder if it is not present.
+#    1.3 : Removed some options which were no longer required.
 
 # - - - - - - - - - - - - - - - - 
 # script settings
@@ -40,15 +39,6 @@ if [ "${download_and_build_same_copy_again}" != "YES" ] && [ "${download_and_bui
     download_and_build_same_copy_again="NO"
 fi
 
-# use existing copy within this directory ("YES"/"NO") - if enabled no new version will be downloaded
-if [ "${use_exisitng_copy}" != "YES" ] && [ "${use_exisitng_copy}" != "NO" ] ; then
-    use_exisitng_copy_of_firefox="NO"
-fi
-
-# Keep record of version which was last built ("YES"/"NO")
-if  [ "${keep_version_build_file_record}" != "YES" ] && [ "${keep_version_build_file_record}" != "NO" ] ; then
-	keep_version_build_file_record="YES"
-fi
 	
 
 # - - - - - - - - - - - - - - - - 
