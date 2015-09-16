@@ -67,7 +67,15 @@ function clean_exit () {
 if [ ${#} -gt 1 ] ; then 
     echo "Usage : /path_to_this_script/script_name.bash [\"adobe distribution download URL\"]"
     echo "        eg. : ./build_latest_flash.bash [\"http://adobe_distribution_download_url\"]"
-    exit -1
+    export exit_value=-1
+	clean_exit
+fi
+
+if [ "${distribution_auth_link}" == "" ] && [ ${#} -eq 0 ] ; then
+	echo "You should provide a distribution authorization URL."
+	echo "For additional information visit : <http://www.adobe.com/products/players/flash-player-distribution.html>"
+    export exit_value=-1
+	clean_exit
 fi
 
 # move to this scripts parents directory
