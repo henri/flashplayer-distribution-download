@@ -1,4 +1,4 @@
-# Flash Player Distribution Package Download #
+# Flash Player Distribution Download #
 
 About
 --------
