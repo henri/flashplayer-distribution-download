@@ -5,13 +5,17 @@ About
 
 This is an open source (GPL v3 or later) script designed to make automated download of the latest Adobe Flash Player Mac OS X distribution installer simple.
 
+There is also a version of the script which depends on autopkg. This should be used until Adobe changes the distribution download URL back so that it is accessible as an unauthenticated user.
+
 License: [GNU GPL 3.0 License][1]
 
 
 Requirements
 ---------
- - Mac OS X 10.6 or later
- - wget
+ - Mac OS X 10.8 or later
+ - autopkg (depending on version)
+ - python (depnding upon version)
+ - wget (dpening on version)
  - internet access
  - adobe distribution url (passed in as argument 1 or entered into the script directly)
 
