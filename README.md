@@ -1,5 +1,7 @@
 # Flash Player Distribution Download #
 
+** This is now an unmaintained tool ** If you require this kind of functionatlity, then please consider using autopkg or other maintained system.
+
 About
 --------
 
